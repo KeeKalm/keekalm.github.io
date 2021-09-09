@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>明日方舟相关信息</title>
+    <url>/2021/08/31/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF/</url>
+    <content><![CDATA[<h1 id="相关站点"><a href="#相关站点" class="headerlink" title="相关站点"></a>相关站点</h1><p><a href="http://prts.wiki/w/%E9%A6%96%E9%A1%B5">PRTS</a></p>
+<p><a href="https://aog.wiki/">明日方舟刷素材推荐一图流</a></p>
+<p><a href="https://penguin-stats.cn/">企鹅物流数据统计</a></p>
+<p><a href="https://opssr.net/">源石作战室</a></p>
+<p><a href="https://viktorlab.cn/akdata/">Arknights DPS</a></p>
+<p><a href="https://ark-nights.com/">明日方舟 - 干员培养表</a></p>
+]]></content>
+      <categories>
+        <category>明日方舟</category>
+      </categories>
+      <tags>
+        <tag>站点收集</tag>
+        <tag>明日方舟</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python虚拟环境与生成并安装第三方库清单</title>
+    <url>/2021/09/09/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%94%9F%E6%88%90%E5%B9%B6%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%B8%85%E5%8D%95/</url>
+    <content><![CDATA[<h1 id="虚拟环境-virtualenv"><a href="#虚拟环境-virtualenv" class="headerlink" title="虚拟环境 virtualenv"></a>虚拟环境 virtualenv</h1><ul>
+<li><p>初始</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install virtualenv</span><br></pre></td></tr></table></figure></li>
+<li><p>创建</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">virtualenv --app-data=&lt;缓存路径&gt; --clear &lt;环境路径&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>启动</p>
+<p>  linux:</p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">source</span> &lt;环境路径&gt;/bin/activate</span><br></pre></td></tr></table></figure>
+<p>  Win:</p>
+  <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">&lt;环境路径&gt;\Scripts\activate.bat</span><br></pre></td></tr></table></figure></li>
+<li><p>退出</p>
+<p>  linux:</p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deactivate</span><br></pre></td></tr></table></figure>
+<p>  Win:</p>
+  <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">&lt;环境路径&gt;\Scripts\deactivate.bat</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="生成并安装第三方库清单"><a href="#生成并安装第三方库清单" class="headerlink" title="生成并安装第三方库清单"></a>生成并安装第三方库清单</h1><h2 id="Pycharm"><a href="#Pycharm" class="headerlink" title="Pycharm"></a>Pycharm</h2><ul>
+<li><p>导出</p>
+<p>  在 <strong>菜单栏Tools</strong> &gt; <strong>Sync Python Requirements</strong></p>
+<p>  会自动生成 <strong>requirements.txt</strong></p>
+</li>
+<li><p>选择默认文件</p>
+<p>  <code>Ctrl+Alt+S</code> &gt; <strong>Tools</strong> &gt; <strong>Python Integrated Tools</strong> &gt;<strong>Package requirements file</strong></p>
+</li>
+<li><p>安装</p>
+<p>  通过IDE的头标签导入 “<strong>Install requirement</strong>“</p>
+</li>
+<li><p>当错误忽略后</p>
+<p>  <code>Ctrl+Alt+S</code> &gt; <strong>Editor</strong> &gt; <strong>Inspections</strong> &gt;<strong>Package requirements</strong> &gt; <strong>Ignore</strong></p>
+</li>
+</ul>
+<h2 id="CTL"><a href="#CTL" class="headerlink" title="CTL"></a>CTL</h2><ul>
+<li><p>生成</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip freeze &gt; requirements.txt</span><br></pre></td></tr></table></figure></li>
+<li><p>安装</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>环境配置</tag>
+      </tags>
+  </entry>
+</search>
