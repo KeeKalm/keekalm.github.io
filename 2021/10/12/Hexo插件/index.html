@@ -20,15 +20,20 @@
     var CONFIG = {"hostname":"keekalm.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="KeeKalm Note">
-<meta property="og:url" content="https://keekalm.github.io/archives/2021/09/index.html">
+  <meta name="description" content="hexo-asset-imagehexo-asset-image 设置本地图片  在Hexo目录安装CodeFalling&#x2F;hexo-asset-image  1npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image --save  该项目会将markdown同级目录的同名文件夹下的图片作为导入，在生成网页时使用，其目录结果为： 12">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo插件">
+<meta property="og:url" content="https://keekalm.github.io/2021/10/12/Hexo%E6%8F%92%E4%BB%B6/index.html">
 <meta property="og:site_name" content="KeeKalm Note">
+<meta property="og:description" content="hexo-asset-imagehexo-asset-image 设置本地图片  在Hexo目录安装CodeFalling&#x2F;hexo-asset-image  1npm install https:&#x2F;&#x2F;github.com&#x2F;CodeFalling&#x2F;hexo-asset-image --save  该项目会将markdown同级目录的同名文件夹下的图片作为导入，在生成网页时使用，其目录结果为： 12">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-10-12T08:23:13.000Z">
+<meta property="article:modified_time" content="2021-10-12T08:36:50.431Z">
 <meta property="article:author" content="KeeKalm">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://keekalm.github.io/archives/2021/09/">
+<link rel="canonical" href="https://keekalm.github.io/2021/10/12/Hexo%E6%8F%92%E4%BB%B6/">
 
 
 <script id="page-configurations">
@@ -36,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | KeeKalm Note</title>
+  <title>Hexo插件 | KeeKalm Note</title>
   
 
 
@@ -178,70 +183,100 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 5 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://keekalm.github.io/2021/10/12/Hexo%E6%8F%92%E4%BB%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="KeeKalm">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="KeeKalm Note">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo插件
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-10-12 16:23:13 / 修改时间：16:36:50" itemprop="dateCreated datePublished" datetime="2021-10-12T16:23:13+08:00">2021-10-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
+        <h1 id="hexo-asset-image"><a href="#hexo-asset-image" class="headerlink" title="hexo-asset-image"></a>hexo-asset-image</h1><p>hexo-asset-image 设置本地图片</p>
+<ol>
+<li><p>在<code>Hexo</code>目录安装<code>CodeFalling/hexo-asset-image</code></p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>该项目会将markdown同级目录的同名文件夹下的图片作为导入，在生成网页时使用，其目录结果为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">MacGesture2-Publish</span><br><span class="line">├── apppicker.jpg</span><br><span class="line">├── logo.jpg</span><br><span class="line">└── rules.jpg</span><br><span class="line">MacGesture2-Publish.md</span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<p>markdown插入图片代码</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">logo</span>](<span class="link">MacGesture2-Publish/logo.jpg</span>)</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-09-10T09:34:58+08:00"
-              content="2021-09-10">
-          09-10
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/09/10/%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB%E8%AF%A6%E5%87%86%E5%88%99/" itemprop="url">
-            <span itemprop="name">英语阅读详准则</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-09-09T09:58:30+08:00"
-              content="2021-09-09">
-          09-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/09/09/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%94%9F%E6%88%90%E5%B9%B6%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%B8%85%E5%8D%95/" itemprop="url">
-            <span itemprop="name">Python虚拟环境与生成并安装第三方库清单</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+<p>此时使用<code>typora</code>作为编辑器时会很好使用，其能将本体图片在粘贴至markdown时拷贝至该目录</p>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/10/12/Hexo%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/" rel="prev" title="Hexo安装与基础设置">
+      <i class="fa fa-chevron-left"></i> Hexo安装与基础设置
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -294,6 +329,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-asset-image"><span class="nav-number">1.</span> <span class="nav-text">hexo-asset-image</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

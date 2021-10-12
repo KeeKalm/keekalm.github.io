@@ -20,21 +20,21 @@
     var CONFIG = {"hostname":"keekalm.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="虚拟环境 virtualenv 初始   1pip install virtualenv 创建   1virtualenv --app-data&#x3D;&lt;缓存路径&gt; --clear &lt;环境路径&gt; 启动   linux:   1source &lt;环境路径&gt;&#x2F;bin&#x2F;activate   Win:   1&lt;环境路径&gt;\Scripts\activate.bat 退">
+  <meta name="description" content="0. git服务相关设置 创建用于存放Hexo工程项目的git仓库，任意仓库即可，用于存储Hexo的配置和原始博客文件  创建git服务的ssh公钥并设置，用于发布Hexo博客  创建用于Hexo的发布仓库，用于Hexo生成静态网页后发布并对位访问    Git服务 指定仓库名    github &lt;username&gt;.github.io     1. 安装Hexo1.1. 初始化一些">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python虚拟环境与生成并安装第三方库清单">
-<meta property="og:url" content="https://keekalm.github.io/2021/09/09/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%94%9F%E6%88%90%E5%B9%B6%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%B8%85%E5%8D%95/index.html">
+<meta property="og:title" content="Hexo安装与基础设置">
+<meta property="og:url" content="https://keekalm.github.io/2021/10/12/Hexo%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/index.html">
 <meta property="og:site_name" content="KeeKalm Note">
-<meta property="og:description" content="虚拟环境 virtualenv 初始   1pip install virtualenv 创建   1virtualenv --app-data&#x3D;&lt;缓存路径&gt; --clear &lt;环境路径&gt; 启动   linux:   1source &lt;环境路径&gt;&#x2F;bin&#x2F;activate   Win:   1&lt;环境路径&gt;\Scripts\activate.bat 退">
+<meta property="og:description" content="0. git服务相关设置 创建用于存放Hexo工程项目的git仓库，任意仓库即可，用于存储Hexo的配置和原始博客文件  创建git服务的ssh公钥并设置，用于发布Hexo博客  创建用于Hexo的发布仓库，用于Hexo生成静态网页后发布并对位访问    Git服务 指定仓库名    github &lt;username&gt;.github.io     1. 安装Hexo1.1. 初始化一些">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-09-09T01:58:30.000Z">
-<meta property="article:modified_time" content="2021-09-09T02:05:33.446Z">
+<meta property="article:published_time" content="2021-10-12T03:16:41.000Z">
+<meta property="article:modified_time" content="2021-10-12T08:21:45.395Z">
 <meta property="article:author" content="KeeKalm">
-<meta property="article:tag" content="python">
 <meta property="article:tag" content="环境配置">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://keekalm.github.io/2021/09/09/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%94%9F%E6%88%90%E5%B9%B6%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%B8%85%E5%8D%95/">
+<link rel="canonical" href="https://keekalm.github.io/2021/10/12/Hexo%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/">
 
 
 <script id="page-configurations">
@@ -47,7 +47,7 @@
   };
 </script>
 
-  <title>Python虚拟环境与生成并安装第三方库清单 | KeeKalm Note</title>
+  <title>Hexo安装与基础设置 | KeeKalm Note</title>
   
 
 
@@ -191,7 +191,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://keekalm.github.io/2021/09/09/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E7%94%9F%E6%88%90%E5%B9%B6%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%B8%85%E5%8D%95/">
+    <link itemprop="mainEntityOfPage" href="https://keekalm.github.io/2021/10/12/Hexo%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -204,7 +204,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Python虚拟环境与生成并安装第三方库清单
+          Hexo安装与基础设置
         </h1>
 
         <div class="post-meta">
@@ -215,7 +215,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-09-09 09:58:30 / 修改时间：10:05:33" itemprop="dateCreated datePublished" datetime="2021-09-09T09:58:30+08:00">2021-09-09</time>
+              <time title="创建时间：2021-10-12 11:16:41 / 修改时间：16:21:45" itemprop="dateCreated datePublished" datetime="2021-10-12T11:16:41+08:00">2021-10-12</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -223,7 +223,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                  <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
                 </span>
             </span>
 
@@ -238,43 +238,48 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="虚拟环境-virtualenv"><a href="#虚拟环境-virtualenv" class="headerlink" title="虚拟环境 virtualenv"></a>虚拟环境 virtualenv</h1><ul>
-<li><p>初始</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install virtualenv</span><br></pre></td></tr></table></figure></li>
-<li><p>创建</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">virtualenv --app-data=&lt;缓存路径&gt; --clear &lt;环境路径&gt;</span><br></pre></td></tr></table></figure></li>
-<li><p>启动</p>
-<p>  linux:</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> &lt;环境路径&gt;/bin/activate</span><br></pre></td></tr></table></figure>
-<p>  Win:</p>
-  <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;环境路径&gt;\Scripts\activate.bat</span><br></pre></td></tr></table></figure></li>
-<li><p>退出</p>
-<p>  linux:</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deactivate</span><br></pre></td></tr></table></figure>
-<p>  Win:</p>
-  <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;环境路径&gt;\Scripts\deactivate.bat</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h1 id="生成并安装第三方库清单"><a href="#生成并安装第三方库清单" class="headerlink" title="生成并安装第三方库清单"></a>生成并安装第三方库清单</h1><h2 id="Pycharm"><a href="#Pycharm" class="headerlink" title="Pycharm"></a>Pycharm</h2><ul>
-<li><p>导出</p>
-<p>  在 <strong>菜单栏Tools</strong> &gt; <strong>Sync Python Requirements</strong></p>
-<p>  会自动生成 <strong>requirements.txt</strong></p>
+        <h1 id="0-git服务相关设置"><a href="#0-git服务相关设置" class="headerlink" title="0. git服务相关设置"></a>0. git服务相关设置</h1><ol>
+<li><p>创建用于存放Hexo工程项目的git仓库，任意仓库即可，用于存储Hexo的配置和原始博客文件</p>
 </li>
-<li><p>选择默认文件</p>
-<p>  <code>Ctrl+Alt+S</code> &gt; <strong>Tools</strong> &gt; <strong>Python Integrated Tools</strong> &gt;<strong>Package requirements file</strong></p>
+<li><p>创建git服务的<code>ssh公钥</code>并设置，用于发布Hexo博客</p>
 </li>
-<li><p>安装</p>
-<p>  通过IDE的头标签导入 “<strong>Install requirement</strong>“</p>
+<li><p>创建用于Hexo的发布仓库，用于Hexo生成静态网页后发布并对位访问</p>
+<table>
+<thead>
+<tr>
+<th>Git服务</th>
+<th>指定仓库名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>github</td>
+<td>&lt;username&gt;.github.io</td>
+</tr>
+</tbody></table>
 </li>
-<li><p>当错误忽略后</p>
-<p>  <code>Ctrl+Alt+S</code> &gt; <strong>Editor</strong> &gt; <strong>Inspections</strong> &gt;<strong>Package requirements</strong> &gt; <strong>Ignore</strong></p>
+</ol>
+<h1 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1. 安装Hexo"></a>1. 安装Hexo</h1><h2 id="1-1-初始化一些环境"><a href="#1-1-初始化一些环境" class="headerlink" title="1.1. 初始化一些环境"></a>1.1. 初始化一些环境</h2><ol>
+<li><p>安装<code>node.js</code>，并写入全局变量</p>
 </li>
-</ul>
-<h2 id="CTL"><a href="#CTL" class="headerlink" title="CTL"></a>CTL</h2><ul>
-<li><p>生成</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip freeze &gt; requirements.txt</span><br></pre></td></tr></table></figure></li>
-<li><p>安装</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure></li>
-</ul>
+<li><p>安装<code>Hexo</code></p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li>
+<li><p>初始化Hexo基础工程文件到指定目录，该目录可以同步至git进行版本管理</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;hexo_dir&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="1-2-初步使用"><a href="#1-2-初步使用" class="headerlink" title="1.2. 初步使用"></a>1.2. 初步使用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;blog_title&gt;	<span class="comment"># 新建新blog文件，并初始化文件头部</span></span><br><span class="line">hexo g		<span class="comment"># 生成静态网页文件</span></span><br><span class="line">hexo s		<span class="comment"># 启动本地服务器，默认为 http://localhost:4000</span></span><br><span class="line">hexo clean	<span class="comment"># 清理生成的文件</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="1-3-推送静态网站"><a href="#1-3-推送静态网站" class="headerlink" title="1.3. 推送静态网站"></a>1.3. 推送静态网站</h2><ol>
+<li><p>在<code>Hexo</code>的根目录下找到文件<code>_config.yml</code>，并修改如下配置</p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span> <span class="comment"># 发布</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span></span><br><span class="line">    <span class="string">&lt;git服务&gt;:</span> <span class="string">&lt;仓库SSH连接&gt;,</span> <span class="string">&lt;分支&gt;</span></span><br><span class="line">    <span class="attr">gitbub:</span> <span class="string">git@github.com:&lt;username&gt;:&lt;username&gt;.github.io,</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></li>
+<li><p><code>Hexo</code>安装<code>git</code>插件</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
+<li><p>推送生成的静态网页</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g	<span class="comment"># 产生文件</span></span><br><span class="line">hexo d	<span class="comment"># 发布项目</span></span><br></pre></td></tr></table></figure></li>
+<li><p><code>_config.yml</code>其他一些配置修改</p>
+ <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">KeeKalm</span> <span class="string">Note</span>	<span class="comment"># 站点名</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">KeeKalm</span>	<span class="comment"># 作者</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span>	<span class="comment"># 语言</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span>	<span class="comment"># 时区</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://keekalm.github.io/</span>	<span class="comment"># 站点URL</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
 
     </div>
 
@@ -284,8 +289,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/python/" rel="tag"># python</a>
               <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" rel="tag"># 环境配置</a>
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           </div>
 
         
@@ -294,12 +299,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/08/31/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF/" rel="prev" title="明日方舟相关信息">
-      <i class="fa fa-chevron-left"></i> 明日方舟相关信息
+    <a href="/2021/09/10/%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB%E8%AF%A6%E5%87%86%E5%88%99/" rel="prev" title="英语阅读详准则">
+      <i class="fa fa-chevron-left"></i> 英语阅读详准则
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/09/10/%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB%E8%AF%A6%E5%87%86%E5%88%99/" rel="next" title="英语阅读详准则">
-      英语阅读详准则 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/10/12/Hexo%E6%8F%92%E4%BB%B6/" rel="next" title="Hexo插件">
+      Hexo插件 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -359,7 +364,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-virtualenv"><span class="nav-number">1.</span> <span class="nav-text">虚拟环境 virtualenv</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%B9%B6%E5%AE%89%E8%A3%85%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%E6%B8%85%E5%8D%95"><span class="nav-number">2.</span> <span class="nav-text">生成并安装第三方库清单</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pycharm"><span class="nav-number">2.1.</span> <span class="nav-text">Pycharm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CTL"><span class="nav-number">2.2.</span> <span class="nav-text">CTL</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0-git%E6%9C%8D%E5%8A%A1%E7%9B%B8%E5%85%B3%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">0. git服务相关设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">2.</span> <span class="nav-text">1. 安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%BA%9B%E7%8E%AF%E5%A2%83"><span class="nav-number">2.1.</span> <span class="nav-text">1.1. 初始化一些环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E5%88%9D%E6%AD%A5%E4%BD%BF%E7%94%A8"><span class="nav-number">2.2.</span> <span class="nav-text">1.2. 初步使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E6%8E%A8%E9%80%81%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99"><span class="nav-number">2.3.</span> <span class="nav-text">1.3. 推送静态网站</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
